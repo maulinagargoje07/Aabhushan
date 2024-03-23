@@ -86,7 +86,7 @@ async function setupViewer(){
 
     viewer.renderer.refreshPipeline()
 
-    await manager.addFromPath("./assets/ring.glb")
+    await manager.addFromPath("./assets/aring.glb")
 
     const drillMaterial = manager.materials!.findMaterialsByName('diamond')[0] as MeshBasicMaterial2
 
@@ -99,7 +99,7 @@ async function setupViewer(){
         target.set(-0.8, 1.55, -0.7)
         camera.setCameraOptions({ fov: 40 })
     } else{
-        target.set(-1.4, 2, 1)
+        target.set(0.69, 1.04,  2.32)
     }
 
     onUpdate()
@@ -113,7 +113,7 @@ async function setupViewer(){
         // FIRST SECTION
 
         tl
-        .to(position, {x: isMobile ? -6.0 : 1.56, y: isMobile ?  5.5 :  -2.26, z: isMobile ? -3.3 :  -3.85,
+        .to(position, {x: isMobile ? 4.46 : 7.25, y: isMobile ?  -4.005 :  5.79, z: isMobile ? -9.51 :  -3.11,
             scrollTrigger: {
                 trigger: ".second",
                 start:"top bottom",
@@ -128,7 +128,7 @@ async function setupViewer(){
                 end: "top 80%", scrub: 1,
                 immediateRender: false
         }})
-        .to(target, {x: isMobile ? -1.1 : -1.37, y: isMobile ? 1.0 : 1.99 , z: isMobile ? -0.1 : -0.37,
+        .to(target, {x: isMobile ? 0.18 : 0.69, y: isMobile ? -1.42 : 1.04 , z: isMobile ? -1.03 : 2.32,
             scrollTrigger: {
                 trigger: ".second",
                 start:"top bottom",
@@ -136,9 +136,9 @@ async function setupViewer(){
                 immediateRender: false
         }})
 
-        // LAST SECTION
-
-        .to(position, {x: -3.4, y: 9.6, z: 1.71,
+        // third SECTION
+       
+        .to(position, { x: isMobile ? -9.63 : 0.69, y: isMobile ?  0.37 :  10.72, z: isMobile ? -0.56 :  3.13,
             scrollTrigger: {
                 trigger: ".third",
                 start:"top bottom",
@@ -146,11 +146,46 @@ async function setupViewer(){
                 immediateRender: false
         }, onUpdate})
 
-        .to(target, {x: -1.5, y: 2.13 , z: -0.4,
+        .to(".section--two--container", { xPercent:'-150' , opacity:0,
+            scrollTrigger: {
+                trigger: ".third",
+                start:"top bottom",
+                end: "top 50%", scrub: 1,
+                immediateRender: false
+        }})
+       
+        .to(target, { x: isMobile ? 0.12: 0.17, y: isMobile ? -0.69 : 0.36 , z: isMobile ? 0.18 : 0.10,
             scrollTrigger: {
                 trigger: ".third",
                 start:"top bottom",
                 end: "top top", scrub: true,
+                immediateRender: false
+        }})
+
+
+        //last section
+        
+        .to(position, {x: isMobile ? -0.07: 0.47, y: isMobile ? -0.2 : 1.30 , z: isMobile ? 15.13 : 5.04,
+            scrollTrigger: {
+                trigger: ".fourth",
+                start:"top bottom",
+                end: "top top", scrub: true,
+                immediateRender: false
+        }, onUpdate})
+
+        .to(".section--third--container", { xPercent:'-150' , opacity:0,
+            scrollTrigger: {
+                trigger: ".fourth",
+                start:"top bottom",
+                end: "top 50%", scrub: 1,
+                immediateRender: false
+        }})
+        
+        .to(target, {x: isMobile ? 0.09: -0.06, y: isMobile ? -0.2 : 1.02 , z: isMobile ? 0.22 : 3.19,
+            scrollTrigger: {
+                trigger: ".fourth",
+                start:"top bottom",
+                end: "top 50%", scrub: true,
                 immediateRender: false
         }})
 
@@ -187,40 +222,11 @@ async function setupViewer(){
 		})
 	})
 
-    // CUSTOMIZE
-    const sections = document.querySelector('.container') as HTMLElement
-    const mainContainer = document.getElementById('webgi-canvas-container') as HTMLElement
-	document.querySelector('.button--customize')?.addEventListener('click', () => {
-        sections.style.display = "none"
-        mainContainer.style.pointerEvents = "all"
-        document.body.style.cursor = "grab"
-        lenis.stop()
-
-        gsap.to(position, {x: -2.6, y: 0.2, z: -9.6, duration: 2, ease: "power3.inOut", onUpdate})
-        gsap.to(target, {x: -0.15, y: 1.18 , z: 0.12, duration: 2, ease: "power3.inOut", onUpdate, onComplete: enableControlers})
-	})
-
     function enableControlers(){
         exitButton.style.display = "block"
         customizerInterface.style.display = "block"
         viewer.scene.activeCamera.setCameraOptions({controlsEnabled: true})
     }
-
-
-    // EXIT CUSTOMIZER
-	exitButton.addEventListener('click', () => {
-        gsap.to(position, {x: -3.4, y: 9.6, z: 1.71, duration: 1, ease: "power3.inOut", onUpdate})
-        gsap.to(target, {x: -1.5, y: 2.13 , z: -0.4, duration: 1, ease: "power3.inOut", onUpdate})
-
-        viewer.scene.activeCamera.setCameraOptions({controlsEnabled: false})
-        sections.style.display = "contents"
-        mainContainer.style.pointerEvents = "none"
-        document.body.style.cursor = "default"
-        exitButton.style.display = "none"
-        customizerInterface.style.display = "none"
-        lenis.start()
-
-	})
 
     document.querySelector('.button--colors.black')?.addEventListener('click', () => {
 		changeColor(new Color(0x0022bc).convertSRGBToLinear())
