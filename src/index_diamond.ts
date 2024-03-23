@@ -98,10 +98,7 @@ async function setupViewer(){
         position.set(-3.5, -1.1, 5.5)
         target.set(-0.8, 1.55, -0.7)
         camera.setCameraOptions({ fov: 40 })
-    } else{
-        position.set(7.25, 5.79, -3.11)
-        target.set(0.69, 1.04,  2.32)
-    }
+    } 
 
     onUpdate()
     
@@ -114,7 +111,7 @@ async function setupViewer(){
         // FIRST SECTION
 
         tl
-        .to(position, {x: isMobile ? 4.46 : 0.69, y: isMobile ?  -4.005 :  1.04, z: isMobile ? -9.51 :  2.32,
+        .to(position, {x: isMobile ? 4.46 : 7.25, y: isMobile ?  -4.005 :  5.79, z: isMobile ? -9.51 :  -3.11,
             scrollTrigger: {
                 trigger: ".second",
                 start:"top bottom",
@@ -129,7 +126,7 @@ async function setupViewer(){
                 end: "top 80%", scrub: 1,
                 immediateRender: false
         }})
-        .to(target, {x: isMobile ? 0.18 : 7.25, y: isMobile ? -1.42 :  5.79, z: isMobile ? -1.03 : -3.11,
+        .to(target, {x: isMobile ? 0.18 : 0.69, y: isMobile ? -1.42 : 1.04 , z: isMobile ? -1.03 : 2.32,
             scrollTrigger: {
                 trigger: ".second",
                 start:"top bottom",
