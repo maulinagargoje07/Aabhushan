@@ -1,4 +1,18 @@
-body {
+@font-face {
+  font-family: 'GeorgiaBallpark';
+  src: url('../assets/fonts/GeorgiaBallpark\ Script.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Mirador';
+  src: url('../assets/fonts/Rene\ Bieder\ -\ Mirador\ Book\ DEMO.otf') format('opentype');
+}
+
+
+
+
+
+ody {
   font-family: 'DM Sans', sans-serif;
   overflow-x: hidden;
   margin: 0;
@@ -147,47 +161,11 @@ h2{
   align-items: center;
 }
 
-.button--exit{
-  width: 90px;
-  margin-bottom: 5%;
-  z-index: 5;
-  position: fixed;
-  bottom: 0;
-  display: none;
+.forth {
+  background-image: url('../assets/images/Desktopforlogo.png');
+
 }
 
-
-.strap--colors{
-  list-style: none;
-}
-
-.button--colors{
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
-  border: 1px solid white;
-  padding: 0;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: all 0.8s ease;
-}
-
-.button--colors:hover{
-  filter: drop-shadow(0 0 0.75rem rgba(28, 17, 52, 0.704));
-  transform: scale(1.5);
-}
-
-.yellow{
-  background-color: #F0D56C;
-}
-
-.red{
-  background-color: rgb(231, 34, 34);
-}
-
-.black{
-  background-color: rgb(74, 76, 79);
-}
 /* MOBILE ADJUSTMENTS */
 
 @media (max-width: 600px) {
