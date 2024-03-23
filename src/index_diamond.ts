@@ -99,6 +99,7 @@ async function setupViewer(){
         target.set(-0.8, 1.55, -0.7)
         camera.setCameraOptions({ fov: 40 })
     } else{
+        position.set(7.25, 5.79, -3.11)
         target.set(0.69, 1.04,  2.32)
     }
 

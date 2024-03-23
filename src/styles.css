@@ -113,6 +113,10 @@ body {
   z-index: 1;
 }
 
+.third {
+  background-image: url('../assets/images/3.png');
+}
+
 .section--third--container{
   width: 360px;
   margin-left: 10%;
