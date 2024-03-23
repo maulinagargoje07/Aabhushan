@@ -114,7 +114,7 @@ async function setupViewer(){
         // FIRST SECTION
 
         tl
-        .to(position, {x: isMobile ? 4.46 : 7.25, y: isMobile ?  -4.005 :  5.79, z: isMobile ? -9.51 :  -3.11,
+        .to(position, {x: isMobile ? 4.46 : 0.69, y: isMobile ?  -4.005 :  1.04, z: isMobile ? -9.51 :  2.32,
             scrollTrigger: {
                 trigger: ".second",
                 start:"top bottom",
@@ -129,7 +129,7 @@ async function setupViewer(){
                 end: "top 80%", scrub: 1,
                 immediateRender: false
         }})
-        .to(target, {x: isMobile ? 0.18 : 0.69, y: isMobile ? -1.42 : 1.04 , z: isMobile ? -1.03 : 2.32,
+        .to(target, {x: isMobile ? 0.18 : 7.25, y: isMobile ? -1.42 :  5.79, z: isMobile ? -1.03 : -3.11,
             scrollTrigger: {
                 trigger: ".second",
                 start:"top bottom",

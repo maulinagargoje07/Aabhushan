@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'GeorgiaBallpark';
-  src: url('../assets/fonts/GeorgiaBallpark\ Script.otf') format('opentype');
+  src: url('../assets/fonts/GeorgiaBallparkScript.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Mirador';
-  src: url('../assets/fonts/Rene\ Bieder\ -\ Mirador\ Book\ DEMO.otf') format('opentype');
+  src: url('../assets/fonts/ReneBieder.otf') format('opentype');
 }
 
 
 
 
 
-ody {
+body {
   font-family: 'DM Sans', sans-serif;
   overflow-x: hidden;
   margin: 0;
@@ -161,10 +161,89 @@ h2{
   align-items: center;
 }
 
-.forth {
-  background-image: url('../assets/images/Desktopforlogo.png');
-
+.logo-section{
+  background-image: url('../assets/images/Bg-ring.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+height: 810px;
+top: 2621px;
+left: 1572px;
+gap: -30px;
+opacity: 0px;
 }
+
+.logo-section img{
+  width: 522px;
+height: 382px;
+top: 146px;
+left: 471px;
+opacity: 0px;
+}
+
+.logo-section h1{
+  font-family: Mirador;
+font-size: 40px;
+font-weight: 700;
+line-height: 48px;
+text-align: left;
+color:  #32261A;
+margin-top: -3px;
+}
+
+@media (max-width: 480px) {
+  .logo-section{
+      width: 100vw;
+      height: 800px;
+      top: 2575px;
+      left: 3389px;
+      gap: 0px;
+      opacity: 0px;
+      margin-top: -10px;
+               margin-left: -10px;
+
+  }
+       .logo-section img {
+              width: 356px;
+               height: 260.79px;
+               top: 270px;
+               left: 4px;
+               gap: 0px;
+               opacity: 0px;
+               
+          }
+
+          .logo-section h1{
+              font-size: 25px;
+          }
+      }
+
+      /* Media queries for 600px devices */
+      @media (max-width: 600px) {
+          .logo-section{
+      width: 100vw;
+             height: 800px;
+             top: 2575px;
+             left: 3389px;
+             gap: 0px;
+             opacity: 0px;
+             margin-top: -10px;
+             margin-left: -10px;
+  }
+          .logo-section img {
+              width: 356px;
+             height: 260.79px;
+             top: 270px;
+             left: 4px;
+             gap: 0px;
+             opacity: 0px;
+             
+          }
+      }
 
 /* MOBILE ADJUSTMENTS */
 
