@@ -86,7 +86,7 @@ async function setupViewer(){
 
     viewer.renderer.refreshPipeline()
 
-    await manager.addFromPath("./assets/aring.glb")
+    await manager.addFromPath("./assets/ring.glb")
 
     const drillMaterial = manager.materials!.findMaterialsByName('diamond')[0] as MeshBasicMaterial2
 
