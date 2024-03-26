@@ -135,7 +135,7 @@ async function setupViewer(){
         }})
 
         // third SECTION
-       
+        
         .to(position, { x: isMobile ? -9.63 : 0.69, y: isMobile ?  0.37 :  10.72, z: isMobile ? -0.56 :  3.13,
             scrollTrigger: {
                 trigger: ".third",
@@ -144,7 +144,7 @@ async function setupViewer(){
                 immediateRender: false
         }, onUpdate})
 
-        .to(".section--two--container", { xPercent:'-150' , opacity:0,
+        .to(".section--two--container", { xPercent:'150' , opacity:0,
             scrollTrigger: {
                 trigger: ".third",
                 start:"top bottom",
@@ -171,7 +171,7 @@ async function setupViewer(){
                 immediateRender: false
         }, onUpdate})
 
-        .to(".section--third--container", { xPercent:'-150' , opacity:0,
+        .to(".section--third--container", { yPercent:'-150' , opacity:0,
             scrollTrigger: {
                 trigger: ".fourth",
                 start:"top bottom",

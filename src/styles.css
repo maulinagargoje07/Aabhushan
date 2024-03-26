@@ -107,13 +107,16 @@ h1 {
 }
 
 .third {
+  position: relative;
   background-image: url('../assets/images/3.png');
 }
 
 .section--third--container {
-  width: 360px;
+  width: 100%;
   margin-left: 10%;
 }
+
+
 
 #webgi-canvas {
   width: 100%;
