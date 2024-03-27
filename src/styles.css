@@ -9,7 +9,6 @@
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -19,6 +18,10 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  background: url('../assets/images/Frame17.png');
 }
 
 .loader {
@@ -74,14 +77,16 @@ body {
   width: 360px;
 }
 
-.first {
-  background-image: url('../assets/images/1.png');
-}
-
 h1 {
   font-family: 'Mirador';
   font-size: 48px;
   font-weight: 400;
+}
+
+p {
+  font-family: 'Mirador';
+  font-weight: 300;
+  font-size: 20px;
 }
 
 .button--navbar {
@@ -95,7 +100,6 @@ h1 {
 }
 
 .second {
-  background-image: url('../assets/images/2.png');
   justify-content: flex-end;
   position: relative;
 }
@@ -106,14 +110,17 @@ h1 {
   z-index: 1;
 }
 
+
+
 .third {
-  position: relative;
-  background-image: url('../assets/images/3.png');
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .section--third--container {
-  width: 100%;
-  margin-left: 10%;
+  width: 837px;
+  margin-top: 50px;
+  text-align: center;
 }
 
 
@@ -136,6 +143,8 @@ h1 {
   align-items: center;
 }
 
+
+
 .logo-section {
   background-image: url('../assets/images/Desktopforlogo.png');
   background-size: cover;
@@ -150,6 +159,7 @@ h1 {
   left: 1572px;
   gap: -30px;
   opacity: 0px;
+  position: relative;
 }
 
 .logo-section img {
