@@ -36,6 +36,18 @@ body {
   
 }
 
+.loader_img{
+
+  width: 100px;
+  margin-left: 40px;
+  display:inline;
+  justify-content: center;
+  align-content: center;
+  padding-top: -150px;
+  
+
+}
+
 .progress {
   position: absolute;
   top: 52%;
@@ -69,14 +81,20 @@ body {
 }
 
 .section--one--container {
-  width: 460px;
+  width: 500px;
   margin-left: 15%;
 }
 
-.section--one--container p {
 
-  width: 500px;
-  font-family: 'Mirador';
+ /* Section first ux */
+
+.section--one--container p {
+  
+  font-family: 'Roboto Slab';
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26.38px;
+  text-align: left;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 
@@ -153,14 +171,6 @@ body {
   }
   
   
-  
-  
-  
-  
-  
-  
-  
-  
   @keyframes fade-in {
   
     100% {
@@ -169,20 +179,22 @@ body {
     }
   }
   
- 
+ /* Section first ux end */
+
 
 .first {
   background-image: url('../assets/images/1.png');
 }
 
+
 h1 {
   font-family: 'Mirador';
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 400;
+  line-height: 57.6px;
+  text-align: left;
+  
 }
-
-
-
 
 .button--navbar {
   background: black;
@@ -198,115 +210,72 @@ h1 {
   background-image: url('../assets/images/2.png');
   justify-content: flex-end;
   position: relative;
+
+
 }
 
 .section--two--container {
-  width: 360px;
+  width: 500px;
   margin-right: 10%;
-  z-index: 1;
+  z-index: 2;
+  line-height: 0.3rem;
+
 }
+
 
 .section--two--container p {
-  width: 500px;
+  font-family:'Roboto Slab';
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26.38px;
+  text-align: left;
+
+}
+
+h2 {
   font-family: 'Mirador';
-  transform: scale(0.94);
-  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 57.6px;
+  text-align: left;
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+
 }
 
-@keyframes scale {
-  100% {
-    transform: scale(1);
-  }
+h2:first-of-type {    
+  animation: showup 30s infinite;
 }
 
-span {
-  display: inline-block;
-  opacity: 0;
-  filter: blur(2px);
+h2:last-of-type {
+  width:0px;
+  animation: reveal 30s infinite;
 }
 
-span:nth-child(17) {
-  animation: fade-in 1.8s 4.1s forwards cubic-bezier(0.11,0, 0.1, 0);
+h2:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 30s infinite;
+}
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
 }
 
-span:nth-child(18) {
-  animation: fade-in 1.8s 4.2s forwards cubic-bezier(0.11, 0, 0.2, 0);
-}
-
-span:nth-child(19) {
-  animation: fade-in 1.8s 4.3s forwards cubic-bezier(0.11, 0, 0.3, 0);
-}
-
-span:nth-child(20) {
-  animation: fade-in 1.8s 4.4s forwards cubic-bezier(0.11, 0, 0.4, 0);
-}
-
-span:nth-child(21) {
-  animation: fade-in 1.8s 4.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(22) {
-  animation: fade-in 1.8s 4.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(23) {
-  animation: fade-in 1.8s 4.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(24) {
-  animation: fade-in 1.8s 4.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(25) {
-  animation: fade-in 1.8s 4.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(26) {
-  animation: fade-in 1.8s 5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(27) {
-  animation: fade-in 1.8s 5.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(28) {
-  animation: fade-in 1.8s 5.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(29) {
-  animation: fade-in 1.8s 5.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(30) {
-  animation: fade-in 1.8s 5.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(31) {
-  animation: fade-in 1.8s 5.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(32) {
-  animation: fade-in 1.8s 5.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(33) {
-  animation: fade-in 1.8s 5.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-@keyframes fade-in {
-
-  100% {
-    opacity: 1;
-    filter: blur(0);
-  }
-}
-
-
-@keyframes fade-in {
-
-  100% {
-    opacity: 1;
-    filter: blur(0);
-  }
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
 }
 
 
@@ -405,6 +374,8 @@ span:nth-child(33) {
     font-size: 25px;
   }
 }
+
+
 
 /* Media queries for 600px devices */
 @media (max-width: 600px) {
