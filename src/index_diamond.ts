@@ -95,11 +95,11 @@ async function setupViewer(){
     viewer.scene.activeCamera.setCameraOptions({controlsEnabled: false})
 
     if (isMobile){
-        position.set(-3.5, -1.1, 5.5)
-        target.set(-0.8, 1.55, -0.7)
+        position.set(6.3844013240, 7.79, -3.482)
+        target.set(-0.3325, -1.12808, 0.0669817639)
         camera.setCameraOptions({ fov: 40 })
     } else{
-        target.set(1.4,1 , 1)
+        target.set(1.4,0.8 , 1)
     }
 
     onUpdate()
@@ -113,7 +113,7 @@ async function setupViewer(){
         // FIRST SECTION
 
         tl
-        .to(position, {x: isMobile ? -6.0 : 0.6906956793, y: isMobile ?  5.5 :  10.7225259425, z: isMobile ? -3.3 : 3.1376114595,
+        .to(position, {x: isMobile ? 2.3780566861 : -2.169286776, y: isMobile ?  11.548145074 :  8.2393954604, z: isMobile ? 4.7639086378 : -4.3947506448,
             scrollTrigger: {
                 trigger: ".second",
                 start:"top bottom",
@@ -121,14 +121,14 @@ async function setupViewer(){
                 immediateRender: false
         }, onUpdate})
 
-        .to(".section--one--container", { xPercent:'-150' , opacity:0,
-            scrollTrigger: {
-                trigger: ".second",
-                start:"top bottom",
-                end: "top 80%", scrub: 1,
-                immediateRender: false
-        }})
-        .to(target, {x: isMobile ? -1.1 : 1.5768414643, y: isMobile ? 1.0 : 0.3607605776 , z: isMobile ? -0.1 : 0.1000884018,
+        // .to(".section--one--container", { xPercent:'-150' , opacity:0,
+        //     scrollTrigger: {
+        //         trigger: ".second",
+        //         start:"top bottom",
+        //         end: "top 80%", scrub: 1,
+        //         immediateRender: false
+        // }})
+        .to(target, {x: isMobile ? 0.422545386 : -1.4428771875, y: isMobile ? -1.673401053 : -2.0917501567 , z: isMobile ? 0.99987019 : 1.6088423353,
             scrollTrigger: {
                 trigger: ".second",
                 start:"top bottom",
@@ -138,15 +138,22 @@ async function setupViewer(){
 
         // LAST SECTION
 
-        .to(position, {x: -0.0093399952, y: 1.8808759541, z: -3.8597065556,
+        .to(position, {x: isMobile ? -0.1272824353 : -0.1192511804, y: isMobile ? 1.4571978292 : 1.6865884662, z: isMobile ? -5.3905300477 : -6.2522243107,
             scrollTrigger: {
                 trigger: ".third",
-                start:"top bottom",
+                start:"20% bottom",
                 end: "top top", scrub: true,
                 immediateRender: false
         }, onUpdate})
+        // .to(".section--two--container", { xPercent:'100' , opacity:0,
+        //     scrollTrigger: {
+        //         trigger: ".third",
+        //         start:"top bottom",
+        //         end: "top 60%", scrub: 1,
+        //         immediateRender: false
+        // }})
 
-        .to(target, {x: 0.1012454871, y: 0.5557006473 , z: 3.3487192387,
+        .to(target, {x: isMobile ? 0.0421384604 : 0.0458602635, y: isMobile ? 1.183574031 :  1.2414079501 , z: isMobile ? 2.4165788901: 2.8792367313,
             scrollTrigger: {
                 trigger: ".third",
                 start:"top bottom",
