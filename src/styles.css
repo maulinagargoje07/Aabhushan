@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'GeorgiaBallpark';
   src: url('../assets/fonts/GeorgiaBallparkScript.otf') format('opentype');
@@ -41,6 +42,19 @@ body {
   align-content: center;
   align-items: center;
   z-index: 2;
+  
+}
+
+.loader_img{
+
+  width: 100px;
+  margin-left: 40px;
+  display:inline;
+  justify-content: center;
+  align-content: center;
+  padding-top: -150px;
+  
+
 }
 
 .progress {
@@ -50,7 +64,7 @@ body {
   width: 100%;
   transform: scaleX(0);
   background-color: black;
-  transition: all 1s ease;
+  transition: all 1s eas
 }
 
 .nav--bar {
@@ -67,6 +81,7 @@ body {
   margin-left: 40px;
 }
 
+
 .section {
   display: flex;
   width: 100vw;
@@ -75,18 +90,28 @@ body {
 }
 
 .section--one--container {
-  width: 460px;
+  width: 500px;
   margin-left: 15%;
 }
+
+
+ /* Section first ux */
 
 .section--one--container p {
   width: 360px;
 }
 
+.first {
+  background-image: url('../assets/images/1.png');
+}
+
 h1 {
   font-family: 'Mirador';
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 400;
+  line-height: 57.6px;
+  text-align: left;
+  
 }
 
 p {
@@ -108,16 +133,19 @@ p {
 .second {
   justify-content: flex-end;
   position: relative;
+<<<<<<< HEAD
   height: 750px;
+=======
+
+
+>>>>>>> 7e194c2d657e1a0bb641881ca71ae78324f303b1
 }
 
 .section--two--container {
-  width: 360px;
+  width: 500px;
   margin-right: 10%;
   z-index: 1;
 }
-
-
 
 .third {
   justify-content: center;
@@ -125,9 +153,8 @@ p {
 }
 
 .section--third--container {
-  width: 837px;
-  margin-top: 50px;
-  text-align: center;
+  width: 100%;
+  margin-left: 10%;
 }
 
 
@@ -308,6 +335,7 @@ p {
   }
 
   .logo-section h1 {
+<<<<<<< HEAD
     font-size: 24px;
     line-height: 28px;
     margin-top: -3px;
@@ -348,5 +376,76 @@ p {
   .social {
     margin-top: 20px;
     margin-left: 30px;
+=======
+    font-size: 25px;
+  }
+}
+
+
+
+/* Media queries for 600px devices */
+@media (max-width: 600px) {
+  .logo-section {
+    width: 100vw;
+    height: 800px;
+    top: 2575px;
+    left: 3389px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+
+  .logo-section img {
+    width: 356px;
+    height: 260.79px;
+    top: 270px;
+    left: 4px;
+    gap: 0px;
+    opacity: 0px;
+  }
+}
+
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 600px) {
+  html, body, .container, nav {
+    overflow-x: hidden;
+  }
+
+  .first h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.1rem;
+    width: 50%;
+    margin: 0 0 15px 0px;
+  }
+
+  .nav--bar {
+    margin-top: 0;
+    z-index: 1;
+    background: #ffffffad;
+    padding: 30px 0;
+    backdrop-filter: blur(5px);
+  }
+
+  .section--one--container {
+    width: 360px;
+    margin-left: 6%;
+    margin-top: 40%;
+  }
+
+  .section--one--container > p {
+    width: 70%;
+  }
+
+  .second {
+    align-items: flex-end;
+  }
+
+  .section--third--container {
+    background-image: url('../assets/images/3.png');
+    width: 220px;
+    margin-left: 7%;
+>>>>>>> 7e194c2d657e1a0bb641881ca71ae78324f303b1
   }
 }
