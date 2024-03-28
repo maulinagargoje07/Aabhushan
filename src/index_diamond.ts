@@ -161,6 +161,22 @@ async function setupViewer(){
                 immediateRender: false
         }})
 
+        .to(position, {x: isMobile ? 2.3780566861 : 64.8037828973, y: isMobile ?  11.548145074 :  34.0848393876, z: isMobile ? 4.7639086378 : -11994.1480940163,
+            scrollTrigger: {
+                trigger: ".logo-section",
+                start:"30% bottom",
+                end: "top top", scrub: true,
+                immediateRender: false
+        }, onUpdate})
+
+        .to(target, {x: isMobile ? 0.0421384604 : 0.0458602635, y: isMobile ? 1.183574031 :  1.2414079501 , z: isMobile ? 2.4165788901: 3.198330598,
+            scrollTrigger: {
+                trigger: ".logo-section",
+                start:"top bottom",
+                end: "top top", scrub: true,
+                immediateRender: false
+        }})
+
     }
 
     setupScrollanimation()

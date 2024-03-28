@@ -294,6 +294,7 @@ p {
     gap: 0px;
     opacity: 0px;
     margin: 0;
+    position: absolute;
   }
 
   .logo-section h1 {
