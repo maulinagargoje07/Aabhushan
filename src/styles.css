@@ -133,12 +133,6 @@ p {
 .second {
   justify-content: flex-end;
   position: relative;
-<<<<<<< HEAD
-  height: 750px;
-=======
-
-
->>>>>>> 7e194c2d657e1a0bb641881ca71ae78324f303b1
 }
 
 .section--two--container {
@@ -335,48 +329,6 @@ p {
   }
 
   .logo-section h1 {
-<<<<<<< HEAD
-    font-size: 24px;
-    line-height: 28px;
-    margin-top: -3px;
-  }
-
-  .footer {
-    height: 300px;
-    display: block;
-  }
-
-  .left {
-    margin-left: 30px;
-  }
-
-  .left p {
-    width: 200px;
-    font-size: 13px;
-    padding-top: 15px;
-  }
-
-  .left img {
-    width: 250px;
-    margin-top: -15px;
-    margin-left: -6px;
-  }
-
-  .right {
-    width: 100%;
-    font-size: 14px;
-    margin: 0;
-    margin-left: 30px;
-  }
-
-  .social p{
-    display: none;
-  }
-
-  .social {
-    margin-top: 20px;
-    margin-left: 30px;
-=======
     font-size: 25px;
   }
 }
@@ -446,6 +398,5 @@ p {
     background-image: url('../assets/images/3.png');
     width: 220px;
     margin-left: 7%;
->>>>>>> 7e194c2d657e1a0bb641881ca71ae78324f303b1
   }
 }
