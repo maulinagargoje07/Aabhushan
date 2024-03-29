@@ -164,22 +164,15 @@ p {
   align-items: center;
 }
 
-
-
 .logo-section {
   background-image: url('../assets/images/Desktopforlogo.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 750px;
+  padding-top: 150px;
+  padding-left: 30%;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 810px;
-  top: 2621px;
-  left: 1572px;
-  gap: -30px;
-  opacity: 0px;
+  position: relative;
 }
 
 .logo-section img {
@@ -196,11 +189,12 @@ p {
   font-weight: 700;
   text-align: left;
   color:  #32261A;
+  margin-left: -28px;
   margin-top: -3px;
 }
 
 .footer {
-  background: black;
+  background: #32261A;
   display: flex;
   position: relative;
   color: #FFFFFF;
@@ -242,7 +236,7 @@ p {
 /* Media queries for 600px devices */
 @media (max-width: 600px) {
   .container {
-    background: url('../assets/images/softm2.png');
+    background: url('../assets/images/Frame17.png');
     font-family: 'Mirador';
   }
 
@@ -288,17 +282,14 @@ p {
 
   .logo-section {
     width: 100%;
-    height: 700px;
-    top: 2575px;
-    left: 3389px;
-    gap: 0px;
-    opacity: 0px;
-    margin: 0;
-    position: absolute;
+    height: 620px;
+    padding-top: 250px;
   }
 
-  .logo-section h1 {
-    font-size: 25px;
+  .logo-section img {
+    width: 200px;
+    height: 150px;
+    margin-left: -20px;
   }
 
   h1 {
@@ -309,13 +300,9 @@ p {
     font-size: 16px;
   }
 
-  .logo-section img {
-    width: 356px;
-    height: 260.79px;
-    top: 270px;
-    left: 4px;
-    gap: 0px;
-    opacity: 0px;
+  .logo-section h1 {
+    font-size: 14px;
+    margin-left: -20px;
   }
 
   .footer {
@@ -328,9 +315,11 @@ p {
   }
 
   .left p {
+    margin: 0;
     width: 200px;
     font-size: 13px;
     padding-top: 15px;
+    padding-bottom: 10px;
   }
 
   .left img {
