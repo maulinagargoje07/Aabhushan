@@ -121,13 +121,13 @@ async function setupViewer(){
                 immediateRender: false
         }, onUpdate})
 
-        .to(".section--one--container", { xPercent:'-150' , opacity:0,
-            scrollTrigger: {
-                trigger: ".second",
-                start:"top bottom",
-                end: "top 80%", scrub: 1,
-                immediateRender: false
-        }})
+        // .to(".section--one--container", { xPercent:'-150' , opacity:0,
+        //     scrollTrigger: {
+        //         trigger: ".second",
+        //         start:"top bottom",
+        //         end: "top 80%", scrub: 1,
+        //         immediateRender: false
+        // }})
 
         .to(target, {x: isMobile ? 0.422545386 : -1.4428771875, y: isMobile ? -1.673401053 : -2.0917501567 , z: isMobile ? 0.99987019 : 1.6088423353,
             scrollTrigger: {
@@ -147,30 +147,13 @@ async function setupViewer(){
                 immediateRender: false
         }, onUpdate})
 
-        .to(".section--two--container", { xPercent:'100' , opacity:0,
-            scrollTrigger: {
-                trigger: ".third",
-                start:"top bottom",
-                end: "top 80%", scrub: 1,
-                immediateRender: false
-        }})
-
-        .to(target, {x: isMobile ? 0.0421384604 : 0.0458602635, y: isMobile ? 1.183574031 :  1.2414079501 , z: isMobile ? 2.4165788901: 2.8792367313,
-            scrollTrigger: {
-                trigger: ".third",
-                start:"top bottom",
-                end: "top top", scrub: true,
-                immediateRender: false
-        }})
-
-        .to(position, {x: isMobile ? -0.1272824353 : -0.1192511804, y: isMobile ? 1.4571978292 : 1.6865884662, z: isMobile ? -5.3905300477 : -6.2522243107,
-            scrollTrigger: {
-                trigger: ".third",
-                start:"top bottom",
-                end: "top top", scrub: true,
-                immediateRender: false
-        }, onUpdate})
-        
+        // .to(".section--two--container", { xPercent:'100' , opacity:0,
+        //     scrollTrigger: {
+        //         trigger: ".third",
+        //         start:"top bottom",
+        //         end: "top 80%", scrub: 1,
+        //         immediateRender: false
+        // }})
 
         .to(target, {x: isMobile ? 0.0421384604 : 0.0458602635, y: isMobile ? 1.183574031 :  1.2414079501 , z: isMobile ? 2.4165788901: 2.8792367313,
             scrollTrigger: {
