@@ -14,6 +14,7 @@
 }
 
 body {
+  
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -80,36 +81,6 @@ body {
   margin-left: 40px;
 }
 
-.section {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-}
-
-.section--one--container {
-  width: 460px;
-  margin-left: 15%;
-}
-
-.section--one--container p {
-  width: 360px;
-}
-
-h1 {
-  font-family: 'Mirador';
-  font-size: 48px;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  font-family: 'Mirador';
-  font-weight: 300;
-  font-size: 20px;
-}
-
 .button--navbar {
   background: black;
   color: white;
@@ -118,20 +89,74 @@ p {
   padding: 10px 30px;
   margin-right: 40px;
   font-size: 0.6rem;
+
 }
+
+.section {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  
+}
+
+.section--one--container {
+  width: 460px;
+  margin-left: 15%;
+}
+
+.section--one--container p {
+  
+  font-family: 'Roboto Slab';
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26.38px;
+  text-align: left;
+   
+}
+
+h1 {
+
+  font-family: 'Mirador';
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+
+}
+
+p {
+  font-family: 'Mirador';
+  font-weight: 300;
+  font-size: 20px;
+}
+
 
 .second {
   justify-content: flex-end;
   position: relative;
+  display:block;
+  overflow: hidden;
+
 }
 
 .section--two--container {
-  width: 430px;
+
+  width: 500px;
   margin-right: 10%;
+  margin-left:650px;
   z-index: 1;
 }
 
-
+.styling {
+width:100%;
+display:block;
+font-family: 'GeorgiaBallpark';
+color:rgb(192, 163, 194);
+font-size: 230px;
+font-weight: 400;
+text-align: center;
+}
 
 .third {
   justify-content: center;
@@ -143,7 +168,6 @@ p {
   margin-top: 50px;
   text-align: center;
 }
-
 
 
 #webgi-canvas {
@@ -163,8 +187,6 @@ p {
   flex-direction: column;
   align-items: center;
 }
-
-
 
 .logo-section {
   background-image: url('../assets/images/Desktopforlogo.png');
@@ -238,6 +260,69 @@ p {
   margin-left: 50px;
   margin-top: -13px;
 }
+
+
+
+
+/* CSS for text animations */
+.section {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.section.fade-in {
+  opacity: 1;
+}
+
+.section.fade-in-left {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.section.fade-in-left.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.10s ease, transform 0.10s ease;
+}
+
+.section.fade-in-right {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.section.fade-in-right.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.10s ease, transform 0.10s ease;
+}
+
+
+/* Your existing CSS code remains unchanged */
+
+/* CSS for text revealing animation */
+.text-reveal {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text-reveal span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-in span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
 
 /* Media queries for 600px devices */
 @media (max-width: 600px) {
