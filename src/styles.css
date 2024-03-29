@@ -14,7 +14,6 @@
 }
 
 body {
-  
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -263,7 +262,7 @@ text-align: center;
 /* CSS for text animations */
 .section {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 
 .section.fade-in {
@@ -290,31 +289,6 @@ text-align: center;
   opacity: 1;
   transform: translateX(0);
   transition: opacity 0.10s ease, transform 0.10s ease;
-}
-
-
-/* Your existing CSS code remains unchanged */
-
-/* CSS for text revealing animation */
-.text-reveal {
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.text-reveal span {
-  display: inline-block;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.fade-in {
-  opacity: 1;
-}
-
-.fade-in span {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 
@@ -347,13 +321,23 @@ text-align: center;
   .section--two--container {
     width: 80%;
     margin: 0;
-    margin-top: 35rem;
+    margin-top: 28rem;
     justify-content: center;
+    text-align: left;
+    padding-left: 50px;
   }
 
-  .section--two--container h1 {
-    line-height: 0.7;
-  }
+  .styling {
+    width:100%;
+    margin: 0;
+    margin-top: 100px;
+    display:block;
+    font-family: 'GeorgiaBallpark';
+    color:rgb(192, 163, 194);
+    font-size: 100px;
+    font-weight: 400;
+    text-align: center;
+    }
 
   .third {
     justify-content: center;
