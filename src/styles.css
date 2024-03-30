@@ -262,7 +262,7 @@ text-align: center;
 /* CSS for text animations */
 .section {
   opacity: 0;
-  transition: opacity 2s ease-in-out;
+  transition: opacity 3s ease-in-out;
 }
 
 .section.fade-in {
@@ -277,7 +277,7 @@ text-align: center;
 .section.fade-in-left.fade-in {
   opacity: 1;
   transform: translateX(0);
-  transition: opacity 0.10s ease, transform 0.10s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .section.fade-in-right {
@@ -288,7 +288,18 @@ text-align: center;
 .section.fade-in-right.fade-in {
   opacity: 1;
   transform: translateX(0);
-  transition: opacity 0.10s ease, transform 0.10s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.fade-in-right {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.section.fade-in-right.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 
@@ -337,6 +348,7 @@ text-align: center;
     font-size: 100px;
     font-weight: 400;
     text-align: center;
+  
     }
 
   .third {
