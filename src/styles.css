@@ -237,17 +237,17 @@ h2 {
 }
 
 h2:first-of-type {    
-  animation: showup 30s infinite;
+  animation: showup 20s infinite;
 }
 
 h2:last-of-type {
   width:0px;
-  animation: reveal 30s infinite;
+  animation: reveal 20s infinite;
 }
 
 h2:last-of-type span {
   margin-left:-355px;
-  animation: slidein 30s infinite;
+  animation: slidein 20s infinite;
 }
 
 @keyframes showup {
@@ -305,8 +305,7 @@ p {
 .section--two--container {
 
   width: 500px;
-  margin-right: 10%;
-  margin-left:650px;
+  margin-left:750px;
   z-index: 1;
 }
 
@@ -318,6 +317,7 @@ color:rgb(192, 163, 194);
 font-size: 230px;
 font-weight: 400;
 text-align: center;
+margin-top: 50px;
 }
 
 .third {
@@ -592,7 +592,7 @@ text-align: center;
 
   .loader img {
     margin: 0;
-    margin-left: 4%;
+    margin-left: 25%;
     margin-top: -140px;
   }
   
